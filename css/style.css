@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    list-style: none;
+    text-decoration: none
+}
+
+body{
+    height: 100%;
+    background-color: rgb(2, 2, 95);
+}
+
+
+/* HEADER */
+
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: rgb(3, 3, 54);
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+}
+
+h1{
+    color: rgb(96, 108, 219);
+    animation-name: titulo;
+    animation: titulo 6s ease-out;
+}
+
+
+/* @keyframes titulo {
+    
+    0%{margin-left: -6000px;}
+
+} */
+
+button{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header li{
+    margin: 0 20px;
+}
+
+header nav li :hover{
+    color: rgb(122, 228, 247);
+}
+
+header nav li a{
+    color: rgb(96, 108, 219);
+    
+}
+
+
+
+
+/* SECTION */
+
+
+section{
+    text-align: center;
+    margin-top: 300px;
+}
+
+.container{
+    width: 1000px;
+    margin-left: 500px;
+}
+
+
+.imagen{
+    display: inline-block;
+    border: 4px solid rgb(96, 108, 219);;
+    height: 300px;
+    width: 400px;
+    margin-top: 60px;
+    color: aqua;
+}
+
+
+
+.perfil{
+    font-size: 30px;
+    color: rgb(96, 108, 219);
+    padding: 50px 0;
+}
+
+form{
+    margin: 200px 0;
+    
+}
+
+label{
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(96, 108, 219);
+    padding: 20px;
+}
+
+input{
+    font-size: 30px;
+    background-color: rgb(56, 56, 231);
+}
+
+
+/* FOOTER */
+
+
+footer{
+    height: 300px;
+    background-color: rgb(22, 1, 97);
+    margin-top: 200px;
+    z-index: 50;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+}
+
+footer nav li{
+    padding: 120px 50px;
+    font-size: 40px;
+}
+
+footer nav li a{
+    color: rgb(96, 108, 219);
+}
+
+
+@media screen and (max-width: 780px) {
+    header nav{
+        width: 100%;
+        display: none;
+    }
+    header .activo{
+        display: block;
+    }
+    header button{
+        display: block;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    header li{
+        margin: 20px 0;
+    }
+}
