@@ -3,11 +3,10 @@
     padding: 0;
     box-shadow: none;
     list-style: none;
-    text-decoration: none
+    text-decoration: none;
 }
 
 body{
-    height: 100%;
     background-color: rgb(2, 2, 95);
 }
 
@@ -18,25 +17,17 @@ body{
 header{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgb(3, 3, 54);
+    height: 200px;
     width: 100%;
-    z-index: 100;
     align-items: center;
 }
 
 h1{
     color: rgb(96, 108, 219);
-    animation-name: titulo;
-    animation: titulo 6s ease-out;
 }
 
-
-/* @keyframes titulo {
-    
-    0%{margin-left: -6000px;}
-
-} */
 
 button{
     display: none;
@@ -136,24 +127,4 @@ footer nav li{
 
 footer nav li a{
     color: rgb(96, 108, 219);
-}
-
-
-@media screen and (max-width: 780px) {
-    header nav{
-        width: 100%;
-        display: none;
-    }
-    header .activo{
-        display: block;
-    }
-    header button{
-        display: block;
-    }
-    header ul{
-        flex-direction: column;
-    }
-    header li{
-        margin: 20px 0;
-    }
 }
