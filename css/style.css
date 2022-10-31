@@ -1,57 +1,69 @@
 *{
     margin: 0;
     padding: 0;
-    box-shadow: none;
+    box-sizing: none;
     list-style: none;
     text-decoration: none;
+    color: rgb(96, 108, 219);
 }
 
 body{
     background-color: rgb(2, 2, 95);
 }
 
+section .tittle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 200px 100px 100px 100px;
+    padding-bottom: 10px;
+    border-bottom: 7px solid rgb(12, 12, 66);
+    font-size: 25px;
+}
 
 /* HEADER */
 
 
 header{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
     background-color: rgb(3, 3, 54);
-    height: 200px;
-    width: 100%;
-    align-items: center;
 }
 
-h1{
+header .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .container .tittle{
+    padding: 60px 0;
+}
+
+header .container .tittle h1{
+    font-size: 60px;
     color: rgb(96, 108, 219);
 }
 
-
-button{
-    display: none;
+header .container .nav{
+    margin-bottom: 50px;
 }
 
-header nav ul{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    align-items: center;
+header .container .nav ul{
+    text-align: center;
 }
 
-header li{
-    margin: 0 20px;
+header .container .nav ul li{
+    display: inline-block;
+    margin: 0 10px;
 }
 
-header nav li :hover{
+header .container .nav li :hover{
     color: rgb(122, 228, 247);
 }
 
-header nav li a{
-    color: rgb(96, 108, 219);
-    
+header .container button{
+    display: none;
 }
+
 
 
 
@@ -59,49 +71,143 @@ header nav li a{
 /* SECTION */
 
 
-section{
-    text-align: center;
-    margin-top: 300px;
-}
+/* PERFIL */
 
-.container{
-    width: 1000px;
-    margin-left: 500px;
+section .container-profile{
+    display: flex;
+    flex-direction: column;
 }
 
 
-.imagen{
-    display: inline-block;
-    border: 4px solid rgb(96, 108, 219);;
+section .container-profile .image{
+    width: 300px;
     height: 300px;
-    width: 400px;
-    margin-top: 60px;
-    color: aqua;
+    border: 4px solid rgb(96, 108, 219);
+    margin: 0 auto;
 }
 
+section .container-profile .profile{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
 
-
-.perfil{
-    font-size: 30px;
+section .container-profile .profile .text{
+    font-size: 20px;
     color: rgb(96, 108, 219);
-    padding: 50px 0;
+    width: 1000px;
 }
 
-form{
-    margin: 200px 0;
-    
+
+
+/* EXPERIENCE */
+
+section .container-experience{
+    background-color: rgb(3, 3, 54);
 }
 
-label{
-    display: inline-block;
-    font-size: 30px;
-    color: rgb(96, 108, 219);
+section .container-experience .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
-input{
-    font-size: 30px;
+section .container-experience .row .icon{
+    width: 100px;
+    height: 100px;
+    border: 4px solid rgb(96, 108, 219);
+    margin: 20px;
+}
+
+
+
+/* PROYECTS */
+
+section .container-proyects{
+    display: flex;
+    justify-content: center;
+}
+
+section .container-proyects .btn{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 30px;
+    border: 4px solid rgb(96, 108, 219);
+    background-color: rgb(3, 3, 54);
+    margin: auto 0;
+    cursor: pointer;
+}
+
+section .container-1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 925px;
+}
+
+section .container-1 .container-2{
+    border: 4px solid rgb(96, 108, 219);
+    text-align: center;
+    background-color: rgb(3, 3, 54);
+}
+
+section .container-1 .container-2 .image{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(2, 2, 95);
+}
+
+section .container-1 .container-2 div p{
+    padding: 10px 0;
+}
+
+section .container-1 .container-2 button{
+    border-radius: 20px;
+    border: 4px solid rgb(96, 108, 219);
+    background-color: rgb(3, 3, 54);
+    padding: 10px;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+
+
+
+/* FORM */
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.container-form form{
+    text-align: justify;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(96, 108, 219);
+    text-align: justify;    
+}
+
+input, textarea{
+    padding: 5px;
+    width: 500px;
+    border: none;
     background-color: rgb(56, 56, 231);
+    resize: none;
+    outline: none;
+    color: aqua;
+}
+
+input, textarea:active{
+    border: none;
 }
 
 
@@ -109,22 +215,58 @@ input{
 
 
 footer{
-    height: 300px;
     background-color: rgb(22, 1, 97);
-    margin-top: 200px;
-    z-index: 50;
+    padding: 50px 0;
 }
 
-footer nav{
+footer ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-footer nav li{
-    padding: 120px 50px;
-    font-size: 40px;
+footer nav ul li{
+    font-size: 20px;
 }
 
 footer nav li a{
     color: rgb(96, 108, 219);
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+    /* PROYECTOS */
+
+    section .container-1{
+        width: 595px;
+    }
+
+
+    section .container-1 .container-2 .image{
+        height: 190px;
+        width: 190px;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+
+    /* PROYECTOS */
+
+    section .container-1{
+        width: 195px;
+    }
+
+    section .container-1 .image{
+        height: 140px;
+        width: 140px;
+    }
+
+    /* FORM */
+
+    input, textarea{
+        padding: 5px;
+        width: 280px;
+    }
 }
