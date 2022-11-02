@@ -156,12 +156,12 @@ input, textarea:active{
     /* PROYECTOS */
 
     section .container-1{
-        width: 195px;
+        display: flex;
+        justify-content: center;
     }
 
-    section .container-1 .image{
-        height: 140px;
-        width: 140px;
+    section .container-proyects .btn{
+        display: none;
     }
 
     /* FORM */
@@ -170,4 +170,6 @@ input, textarea:active{
         padding: 5px;
         width: 280px;
     }
+
+    
 }
