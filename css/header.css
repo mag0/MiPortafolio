@@ -1,0 +1,98 @@
+
+/* HEADER */
+
+
+header{
+    background-color: rgb(3, 3, 54);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .container .tittle{
+    padding: 60px 0;
+}
+
+header .container .tittle h1{
+    font-size: 60px;
+    color: rgb(96, 108, 219);
+}
+
+header .container .nav{
+    margin-bottom: 50px;
+}
+
+header .container .nav ul{
+    text-align: center;
+}
+
+header .container .nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+header .container .nav li :hover{
+    color: rgb(122, 228, 247);
+}
+
+header .container button{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 425px){
+
+    /* MENU */
+
+    header .container .submenu{
+        margin: 0 auto;
+    }
+
+    header .container button{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: rgb(3, 3, 54);
+        border-radius: 100%;
+    }
+
+    header .container .main-up{
+        display: none;
+    }
+
+    header .container .down{
+        display: none;
+    }
+
+    header .container .up{
+        display: block;
+    }
+
+    header .container button i{
+        font-size: 40px;
+    }
+
+    header .container .nav{
+        display: none;
+    }
+
+    header .container .active{
+        display: block;
+    } 
+    
+    header .container .nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .container .nav ul li{
+        margin: 10px 0;
+    }
+
+}

@@ -1,0 +1,24 @@
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(3, 3, 54);
+    padding: 50px 0;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li{
+    font-size: 20px;
+}
+
+footer li a{
+    color: rgb(96, 108, 219);
+}
+
+footer li :hover{
+    color: rgb(122, 228, 247);
+}
