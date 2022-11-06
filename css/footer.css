@@ -22,3 +22,13 @@ footer li a{
 footer li :hover{
     color: rgb(122, 228, 247);
 }
+
+footer ul li img{
+    height: 50px;
+    width: 50px;
+    transition: all 1s ease;
+}
+
+footer ul li img:hover{
+    transform: scale(1.5);
+}

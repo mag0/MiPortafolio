@@ -17,6 +17,11 @@ section .container-profile .image{
     margin: 0 auto;
 }
 
+section .container-profile img{
+    width: 300px;
+    height: 300px;
+}
+
 section .container-profile .profile{
     display: flex;
     justify-content: center;
@@ -50,11 +55,22 @@ section .container-experience .row .icon{
     width: 120px;
     height: 120px;
     margin: 20px;
+    cursor: pointer;
+}
+
+section .container-experience img{
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+section .container-experience img:hover{
+    transform: scale(1.7);
 }
 
 section .container-experience .row .icon p{
     text-align: center;
-    margin: 50px 0 -50px 0;
 }
 
 
@@ -151,7 +167,7 @@ form button{
     padding: 5px;
     border: none;
     background-color: rgb(56, 56, 231);
-    color: rgba(0, 0, 0, 0.283);
+    color: rgb(27, 35, 99);
     font-weight: 800;
 }
 
@@ -163,6 +179,13 @@ input, textarea:active{
 
 @media screen and (max-width: 425px){
 
+
+    /* PROFILE */
+
+    section .container-profile .profile .text{
+        margin: 0 15px;
+    }
+
     /* PROYECTOS */
 
     section .container-1{
@@ -172,6 +195,11 @@ input, textarea:active{
 
     section .container-proyects .btn{
         display: none;
+    }
+
+    section .container-1 .container-2 .image{
+        height: 220px;
+        width: 220px;
     }
 
     /* FORM */

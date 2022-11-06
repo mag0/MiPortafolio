@@ -15,32 +15,6 @@ body{
     background-color: rgb(2, 2, 95);
 }
 
-section .container-profile img{
-    width: 300px;
-    height: 300px;
-}
-
-section .container-experience img{
-    width: 120px;
-    height: 120px;
-    cursor: pointer;
-    transition: all 1s ease;
-}
-
-section .container-experience img:hover{
-    transform: scale(1.7);
-}
-
-footer ul li img{
-    height: 50px;
-    width: 50px;
-    transition: all 1s ease;
-}
-
-footer ul li img:hover{
-    transform: scale(1.5);
-}
-
 section .tittle{
     text-align: center;
     margin: 200px 60px 100px 60px;
